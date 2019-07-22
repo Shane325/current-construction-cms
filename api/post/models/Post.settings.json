@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": "Blog posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "published_at": {
+      "required": true,
+      "type": "date"
+    },
+    "title": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "content": {
+      "required": true,
+      "type": "text"
+    },
+    "imageUrl": {
+      "required": true,
+      "type": "string"
+    },
+    "imageAlt": {
+      "required": true,
+      "type": "string"
+    },
+    "preview": {
+      "type": "string"
+    },
+    "user": {
+      "required": true,
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "pageDescription": {
+      "type": "string"
+    }
+  }
+}
